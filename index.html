@@ -5,9 +5,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Converter Extension</title>
+    <style>
+        input[type=file]::file-selector-button {
+        color: #fff;
+        border: 2px solid #6c5ce7;
+        padding: .4em 1em;
+        border-radius: 2.2rem;
+        background: linear-gradient(80deg, #7700ff, #db66ff);
+        transition: 1s;
+        }
+
+        input[type=file]::file-selector-button:hover {
+        background-color: #81ecec;
+        border: 2px solid #00cec9;
+        }
+    </style>
 </head>
 <body>
-    
+    <div class="container">
+        <form action="">
+            <input type="file" id="file-upload">
+            <select name="file-type" id="">
+                <optgroup label="Audio">
+                    <option value="null">Choose File Type</option>
+                    <option value="AIFF">AIFF</option>
+                    <option value="FLAC">FLAC</option>
+                    <option value="M4R">M4R</option>
+                    <option value="MMF">MMF</option>
+                    <option value="MP3">MP3</option>
+                    <option value="OGG">OGG</option>
+                    <option value="OPUS">OPUS</option>
+                    <option value="WAV">WAV</option>
+                    <option value="WMA">WMA</option>
+                </optgroup>
+                <optgroup label="Video">
+                    
+                </optgroup>
+                <optgroup label="Image">
+                    
+                </optgroup>
+            </select>
+        </form>
+    </div>
+
     
 </body>
 </html>
