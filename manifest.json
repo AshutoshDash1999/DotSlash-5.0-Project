@@ -1,0 +1,14 @@
+{
+    "manifest_version": 2,
+    "name": "DotSlash Utility Toolbox",
+    "description": "A super handy chrome extension that helps you quickly do stuff to increase your productivity on things that matter! Because, time is precious.",
+    "version": "1.0.0",
+    "icons": {"128":"utility-toolbox-128.png"},
+    "browser_action":{
+        "default_icon": "utility-toolbox-logo1.png",
+        "default_popup": "popup.html"
+    },
+    "permissions": ["activeTab","storage"]
+
+
+}
