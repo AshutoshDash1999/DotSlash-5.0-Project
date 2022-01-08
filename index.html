@@ -11,7 +11,7 @@
         border: 2px solid #6c5ce7;
         padding: .4em 1em;
         border-radius: 2.2rem;
-        background: linear-gradient(80deg, #7700ff, #db66ff);
+        background: linear-gradient(80deg, #7700ff, #ca1cff);
         transition: 1s;
         }
 
@@ -19,6 +19,20 @@
         background-color: #81ecec;
         border: 2px solid #00cec9;
         }
+
+        #submitBtn{
+            color: #fff;
+            border: 2px solid #6c5ce7;
+            padding: .4em 1em;
+            border-radius: 0.2rem;
+            background: linear-gradient(80deg, #ca1cff, #7700ff);
+            transition: 1s;
+        }
+
+        input, select, button{
+            margin: 0.5rem;
+        }
+
     </style>
 </head>
 <body>
@@ -27,7 +41,7 @@
             <input type="file" id="file-upload">
             <select name="file-type" id="">
                 <optgroup label="Audio">
-                    <option value="null">Choose File Type</option>
+                    <option value="null">Convert to: </option>
                     <option value="AIFF">AIFF</option>
                     <option value="FLAC">FLAC</option>
                     <option value="M4R">M4R</option>
@@ -39,12 +53,30 @@
                     <option value="WMA">WMA</option>
                 </optgroup>
                 <optgroup label="Video">
-                    
+                    <option value="3G2">3G2</option>
+                    <option value="3GP">3GP</option>
+                    <option value="AVI">AVI</option>
+                    <option value="FLV">FLV</option>
+                    <option value="MKV">MKV</option>
+                    <option value="MOV">MOV</option>
+                    <option value="MP4">MP4</option>
                 </optgroup>
                 <optgroup label="Image">
-                    
+                    <option value="GIF">GIF</option>
+                    <option value="ICO">ICO</option>
+                    <option value="JPG">JPG</option>
+                    <option value="PNG">PNG</option>
+                    <option value="SVG">SVG</option>
+                    <option value="MOV">MOV</option>
+                    <option value="MP4">MP4</option>
+                </optgroup>
+                <optgroup label="Document">
+                    <option value="Word">Word</option>
+                    <option value="PDF">PDF</option>
                 </optgroup>
             </select>
+
+            <button type="button" id="submitBtn">Convert</button>
         </form>
     </div>
 
